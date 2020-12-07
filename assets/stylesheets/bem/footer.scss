@@ -1,0 +1,164 @@
+.footer {
+  padding-top: 70px;
+  background: #000000;
+  color: #FFFFFF;
+
+  @media (max-width: 1499px) {
+    padding-top: 50px;
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: 201px;
+
+    &_text {
+      padding-top: 25px;
+      opacity: 0.34;
+      transition: $t;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 557px;
+    padding-bottom: 65px;
+
+    ul {
+      li {
+        display: flex;
+        margin-bottom: 18px;
+
+        a {
+          color: #666666;
+          font-weight: 300;
+
+          &:hover {
+            color: white;
+          }
+
+          &:nth-child(2) {
+            margin-left: 38px;
+          }
+        }
+
+        &.bold {
+          margin-bottom: 27px;
+
+          a {
+            color: white;
+            font-weight: 400;
+          }
+
+          &:nth-child(2n) {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    width: 100%;
+    max-width: 251px;
+
+    &_title {
+      max-width: 212px;
+      padding-bottom: 16px;
+    }
+
+    &_form {
+      padding-bottom: 18px;
+      position: relative;
+
+      input {
+        background: #01070C;
+        border: 1px solid #09497A;
+        color: white;
+        width: 251px;
+        height: 48px;
+        padding-left: 17px;
+        padding-right: 52px;
+
+        &::placeholder {
+          color: #1393F4;
+        }
+      }
+
+      button {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 18px;
+        top: 17px;
+        background: transparent;
+
+        i:before {
+          color: $blue;
+        }
+
+        &:hover {
+          i:before {
+            color: $rose;
+          }
+        }
+      }
+    }
+
+    .header__socials_list {
+      li {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          border-color: #75003A;
+          background-color: #0B0005;
+          color: #EA0074;
+
+          @media (max-width: 1499px) {
+            width: 30px;
+            height: 30px;
+
+            i:before {
+              font-size: 10px;
+            }
+          }
+
+          &:hover {
+            background: rgba(234,0,116,0.5);
+
+            i:before {
+              color: $rose;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #ffffff36;
+    opacity: 0.55;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+.main-services {
+  background: #1d1d1d;
+  position: relative;
+  padding-bottom: 100px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 128px;
+    height: 100%;
+    width: calc((100vw - 1180px) / 2 + 695px);
+    background-color: black;
+
+    @media (max-width: 1499px) {
+      top: 120px;
+    }
+  }
+
+  .container {
+    max-width: 1146px;
+  }
+
+  &__title {
+    font-family: $MVS;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+
+    @media (max-width: 1499px) {
+      font-size: 130px;
+    }
+
+    span {
+      color: #EA0074;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    &_text {
+      max-width: 404px;
+      width: 100%;
+      padding-top: 154px;
+    }
+
+    &_cards {
+      width: 100%;
+      max-width: 595px;
+      height: 630px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 58px;
+      position: relative;
+    }
+
+    &_card {
+      width: 274.23px;
+      height: 273.02px;
+      padding: 35px;
+      background: #141414;
+
+      &_img {
+        width: 60px;
+        height: 60px;
+        background-image: url('img/content/main/ser.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 20px;
+      }
+
+      &_title {
+        font-family: $Q;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        letter-spacing: 0.554878px;
+        color: #FFFFFF;
+        padding-bottom: 24px;
+      }
+
+      &_subtitle {
+        line-height: 164%;
+        color: #FFFFFF;
+        opacity: 0.5;
+      }
+    }
+  }
+}

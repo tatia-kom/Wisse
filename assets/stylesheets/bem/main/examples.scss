@@ -1,0 +1,104 @@
+.main-examples {
+  background: #000000;
+  padding-bottom: 100px;
+
+  &__title {
+    position: relative;
+
+    span {
+      font-family: $MVS;
+      font-weight: bold;
+      font-size: 150px;
+      line-height: 150px;
+      text-transform: uppercase;
+      color: black;
+      -webkit-text-stroke: 2px #EA0074;
+
+      @media (max-width: 1499px) {
+        font-size: 130px;
+      }
+    }
+
+    p {
+      font-family: $Q;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 70px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: right;
+      position: relative;
+      top: -58px;
+
+      @media (max-width: 1499px) {
+        font-size: 36px;
+        padding-right: 227px;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    left: -25px;
+    width: calc(100% + 50px);
+  }
+
+  &__card {
+    width: calc(25% - 50px);
+    height: 300px;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 60px;
+
+    @media (max-width: 1499px) {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: calc(25% - 40px);
+      height: 289px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      background-image: url('img/illustration/card-bg.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+      width: 40px;
+      height: 40px;
+      top: -20px;
+      right: -20px;
+      transition: $t;
+
+      @media (max-width: 1499px) {
+        width: 38px;
+        height: 38px;
+        top: -17px;
+        right: -17px;
+      }
+    }
+
+    &:hover {
+      span {
+        width: 299px;
+        height: 340px;
+
+        @media (max-width: 1499px) {
+          width: calc(100% + 40px);
+          height: calc(100% + 40px);
+        }
+      }
+    }
+  }
+}

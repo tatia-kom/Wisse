@@ -1,0 +1,127 @@
+.main-about {
+  background: #1D1D1D;
+
+  &__title {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &_top {
+      font-family: $MVS;
+      font-weight: bold;
+      font-size: 150px;
+      line-height: 150px;
+      text-transform: uppercase;
+      color: #1D1D1D;
+      -webkit-text-stroke: 2px #828282;
+
+      @media (max-width: 1499px) {
+        font-size: 130px;
+      }
+
+      span {
+        -webkit-text-stroke: 2px #EA0074;
+        margin-left: 30px;
+      }
+    }
+
+    &_btn {
+      font-family: $Q;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-right: 293px;
+      position: relative;
+      top: -52px;
+
+      @media (max-width: 1499px) {
+        padding-right: 245px;
+      }
+    }
+  }
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 284px;
+    position: relative;
+
+    @media (max-width: 1499px) {
+      padding-bottom: 85px;
+    }
+
+    &_media {
+      width: 845px;
+      height: 593.24px;
+      background-image: url('img/content/main/3.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      margin-left: -210px;
+      flex-shrink: 0;
+      position: relative;
+      margin-right: 105px;
+
+      @media (max-width: 1699px) {
+        margin-left: 0;
+        margin-right: 70px;
+        width: 750px;
+        height: 550px;
+      }
+
+      @media (max-width: 1499px) {
+        width: auto;
+        flex-grow: 1;
+        height: 450px;
+      }
+
+      .btn-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &_text {
+      width: 457px;
+      flex-shrink: 0;
+
+      &_title {
+        font-family: $Q;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 0.554878px;
+        color: #FFFFFF;
+        padding-bottom: 40px;
+
+        @media (max-width: 1499px) {
+          font-size: 38px;
+          line-height: 46px;
+        }
+      }
+
+      &_body {
+        padding-bottom: 40px;
+        line-height: 164%;
+        color: #FFFFFF;
+        opacity: 0.5;
+
+        @media (max-width: 1499px) {
+          padding-bottom: 30px;
+        }
+      }
+
+      &_btn {
+        height: 66px;
+      }
+    }
+  }
+}

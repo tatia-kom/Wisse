@@ -1,0 +1,86 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  font-style: normal;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 320px;
+  padding-top: 189px;
+
+  @media (max-width: 1499px) {
+    padding-top: 133px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+[contenteditable="true"],
+[tabindex] {
+  color: #181A27;
+  outline: none;
+  transition: .5s ease all;
+  resize: none;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+// Turn Off Number Input Spinners
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+$t: all 0.5s ease;
+$MVS :'MVSansBold',
+sans-serif;
+$Q :'Qanelas',
+sans-serif;
+
+// colors
+$blue: #1393F4;
+$rose: #EA0074;

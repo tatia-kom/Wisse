@@ -1,0 +1,138 @@
+.main-contact {
+  background-image: url('img/illustration/contact.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc((100vw - 1180px) / 2 + 345px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0.94;
+    backdrop-filter: blur(40px);
+
+    @media (max-width: 1499px) {
+      width: calc((100vw - 1180px) / 2 + 280px);
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 112px;
+    padding-bottom: 118px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 200px;
+      top: 0;
+      bottom: 0;
+      left: -32px;
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0.94;
+      backdrop-filter: blur(40px);
+
+      @media (max-width: 1499px) {
+        left: -5px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 123px;
+      top: 0;
+      bottom: 0;
+      left: 248px;
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0.94;
+      backdrop-filter: blur(40px);
+
+      @media (max-width: 1499px) {
+        left: 275px;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+
+    span {
+      font-family: $MVS;
+      font-weight: bold;
+      font-size: 150px;
+      line-height: 150px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 0.18;
+      text-align: center;
+      width: 100%;
+      display: block;
+
+      @media (max-width: 1499px) {
+        font-size: 130px;
+      }
+    }
+
+    p {
+      font-family: $Q;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 110%;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      width: 641px;
+      margin: 0 auto;
+      position: relative;
+      top: -72px;
+
+      @media (max-width: 1499px) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__form {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+
+    input {
+      width: 230px;
+      height: 66px;
+      background: rgba(0, 0, 0, 0.21);
+      backdrop-filter: blur(10px);
+      color: black;
+      padding: 0 16px;
+      transition: $t;
+      border: 1px solid transparent;
+
+      &::placeholder {
+        color: #FFFFFF;
+      }
+
+      &:focus {
+        border-color: #1393F4;
+        background: rgba(19, 147, 244, 0.2);
+      }
+    }
+
+    .btn {
+      height: 66px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+header.header
+  div.header__top
+    div.container
+      div.header__msg
+        a.header__msg_item(href='#') ROCKTOBER SALE!!! 25% OFF
+      div.header__socials
+        ul.header__socials_list
+          li
+            a(href='')
+              i.i-youtube
+          li
+            a(href='')
+              i.i-twitter
+          li
+            a(href='')
+              i.i-instagram
+  div.header__btn
+    div.container
+      div.header-search
+        input.header-search__input(type="text" placeholder="Search")
+        button.header-search__button
+          i.i-search
+
+        div.header-search-autocomplete
+          button.header-search-autocomplete__close
+
+          ul.header-search-autocomplete__list
+            li Norma land distressed
+            li Norma land distressed 01
+            li Norma land distressed 02
+      div.header__logo
+        a(href='<?php echo get_home_url(); ?>')
+          img(src='img/illustration/logo.svg', alt='')
+      div.header__phone
+        a.header__phone_item(href='#')
+          i.i-phone
+          | 773-267-4002
+    div.container
+      // menu
+      ul.header-menu
+        li.header-menu__link
+          a(href='#') about us
+        li.header-menu__link.header-menu__link--opening
+          a(href='#') Auto Graphics
+          ul.header-menu__submenu
+            li.header-menu__link.header-menu__link--opening
+              a(href="#") Commercial branding
+              ul.header-menu__submenu
+                li.header-menu__link
+                  a(href="#") Link
+            li.header-menu__link.header-menu__link--opening
+              a(href="#") Car wrapping
+              ul.header-menu__submenu
+                li.header-menu__link
+                  a(href="#") Color change
+                li.header-menu__link
+                  a(href="#") Custom vinyl graphics
+                li.header-menu__link
+                  a(href="#") UV protection
+                li.header-menu__link
+                  a(href="#") Window/Lights tinting
+            li.header-menu__link
+              a(href="#") Request a Quote
+        li.header-menu__link.header-menu__link--opening
+          a(href='#') Premiss Graphics
+          ul.header-menu__submenu
+            li.header-menu__link
+              a(href="#") Wall graphics
+            li.header-menu__link
+              a(href="#") Window graphics
+            li.header-menu__link
+              a(href="#") Floor graphics
+            li.header-menu__link
+              a(href="#") Request a Quote
+        li.header-menu__link.header-menu__link--opening
+          a(href='#') Decals/Signage
+          ul.header-menu__submenu
+            li.header-menu__link
+              a(href="#") Link
+        li.header-menu__link
+          a(href='#') Design/Printing
+        li.header-menu__link
+          a(href='#') Web design
+        li.header-menu__link.header-menu__link--opening
+          a(href='#') Corporate Branding
+          ul.header-menu__submenu
+            li.header-menu__link
+              a(href="#") Link
+        li.header-menu__link
+          a(href='#') contact us

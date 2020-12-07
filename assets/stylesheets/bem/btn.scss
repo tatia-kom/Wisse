@@ -1,0 +1,36 @@
+.btn {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: $MVS;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1393F4;
+  width: 230px;
+  height: 46px;
+  transition: $t;
+  border: 2px solid transparent;
+
+  i {
+    margin-left: 14px;
+  }
+
+  &:hover {
+    //box-shadow: 0px 21px 44px rgba(2, 4, 31, 0.34);
+    background: #EA0074;
+    border-color: #FFFFFF;
+  }
+}
+
+.btn-play {
+  width: 85px;
+  height: 85px;
+  background-image: url('img/illustration/btn.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

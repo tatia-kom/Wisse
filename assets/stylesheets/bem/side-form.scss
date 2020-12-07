@@ -1,0 +1,170 @@
+.side-form-button {
+  position: fixed;
+  right: -36px;
+  top: 280px;
+  background: $rose;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 15px 16px;
+  cursor: pointer;
+  transition: $t;
+  z-index: 1200;
+  transform: rotate(90deg);
+
+  &:hover {
+    background: $blue;
+  }
+
+  i {
+    &:before {
+      transform: rotate(-90deg);
+    }
+  }
+
+  span {
+    margin-left: 3px;
+  }
+}
+
+.side-form {
+  position: fixed;
+  right: 0;
+  top: 189px;
+  bottom: 0;
+  width: 370px;
+  background: $rose;
+  z-index: 1201;
+  transition: $t;
+  padding: 60px 30px;
+  overflow: auto;
+  transform: translateX(100%);
+
+  @media (max-width: 1499px) {
+    top: 133px;
+  }
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__close {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: $t;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      background: white;
+      transform: rotate(-45deg);
+      left: 50%;
+      margin-left: -6px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      background: white;
+      transform: rotate(45deg);
+      left: 50%;
+      margin-left: -6px;
+    }
+
+    &:hover {
+      background: white;
+
+      &:before,
+      &:after {
+        background: $blue;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-family: $MVS;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #DA0A71;
+    position: relative;
+
+    span {
+      display: block;
+      font-family: $Q;
+      font-weight: 600;
+      font-size: 29px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: white;
+      position: absolute;
+      bottom: 5px;
+      left: 4px;
+    }
+  }
+
+  &__form {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-top: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    height: 46px;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 0 16px;
+
+    @include placeholderColor(white);
+
+    &--filled {
+      background: white;
+      color: $blue;
+    }
+
+    &:focus {
+      background: rgba(19, 147, 244, 0.2);
+      border-color: #1393F4;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+
+    i:before {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background: white;
+      border-color: $blue;
+      color: $blue;
+
+      i:before {
+        color: $blue;
+      }
+    }
+  }
+}

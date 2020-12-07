@@ -1,0 +1,28 @@
+@import "node_modules/normalize.css/normalize";
+@import "node_modules/bourbon/core/_bourbon";
+@import "node_modules/slick-carousel/slick/slick.scss";
+
+// mixins
+@import "mixins/icon";
+@import "mixins/placeholder";
+
+@import "fonts";
+@import "defaults";
+@import "icons";
+
+// bem blocks
+@import "bem/header";
+@import "bem/header-menu";
+@import "bem/content";
+@import "bem/footer";
+@import "bem/btn";
+@import "bem/form";
+@import "bem/side-form";
+@import "bem/cocoen/cocoen";
+@import "bem/cocoen/cocoen-cus";
+@import "bem/main/hero";
+@import "bem/main/about";
+@import "bem/main/services";
+@import "bem/main/examples";
+@import "bem/main/contact";
+@import "bem/main/brand";

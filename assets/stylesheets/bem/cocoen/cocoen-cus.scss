@@ -1,0 +1,21 @@
+.cocoen {
+  height: 606px;
+  border: none !important;
+
+  img {
+    height: 100%;
+  }
+
+  .cocoen-drag {
+    &:before {
+      background-image: url('img/illustration/cocoen.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70.37px;
+      height: 70.37px;
+      border: none;
+      margin-left: -35px;
+    }
+  }
+}
