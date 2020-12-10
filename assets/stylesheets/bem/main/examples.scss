@@ -4,6 +4,11 @@
 
   &__title {
     position: relative;
+    margin-top: -25px;
+
+    @media (max-width: 1499px) {
+      margin-top: -30px;
+    }
 
     span {
       font-family: $MVS;

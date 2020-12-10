@@ -1,6 +1,21 @@
 .main-about {
   background: #1D1D1D;
 
+  .container {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 143px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
   &__title {
     padding-top: 80px;
     display: flex;
@@ -48,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 284px;
+    padding-bottom: 165px;
     position: relative;
 
     @media (max-width: 1499px) {

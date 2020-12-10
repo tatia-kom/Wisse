@@ -11,8 +11,18 @@ section.side-form
 
     form.side-form__form
         input.side-form__input.side-form__input--filled(type="text" value="Pasha" placeholder="Contact name")
+        // error span:
+        //span The field is required.
         input.side-form__input.phone-mask(type="text" placeholder="Contact phone")
+        // error span:
+        //span The field is required.
         input.side-form__input(type="text" placeholder="Your email")
+        // error span:
+        //span The field is required.
         button.btn.side-form__button
             | Send
             i.i-btn
+
+        // Form error message:
+        //div.side-form__error
+          span One a more fields have an error. Please check and try again

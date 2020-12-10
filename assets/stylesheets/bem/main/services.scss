@@ -20,6 +20,18 @@
 
   .container {
     max-width: 1146px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 126px;
+      width: 1px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.1);
+    }
   }
 
   &__title {

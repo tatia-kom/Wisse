@@ -26,6 +26,10 @@
     bottom: 106px;
     left: 0;
     right: 0;
+
+    @media (max-width: 1499px) {
+      bottom: 64px;
+    }
   }
 
   &_item {
@@ -37,6 +41,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (max-width: 1499px) {
+      padding-top: 108px;
+      padding-bottom: 131px;
+    }
 
     &:before {
       content: '';
@@ -86,6 +95,11 @@
         height: 224px;
         overflow: hidden;
 
+        @media (max-width: 1499px) {
+          width: 354px;
+          height: 216px;
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -116,8 +130,17 @@
   height: 480px;
   background: black;
 
+  @media (max-width: 1499px) {
+    width: calc(100% - 354px - 9px);
+    height: 442px;
+  }
+
   &__slide {
     position: relative;
+
+    @media (max-width: 1499px) {
+      height: 442px;
+    }
 
     img {
       width: 100%;
@@ -142,6 +165,10 @@
     background: url('img/illustration/slider-cover.png');
     transition: $t;
     transform: translateX(-100%);
+
+    @media (max-width: 1499px) {
+      width: 266px;
+    }
 
     &--visible {
       transform: translateX(0);
@@ -191,8 +218,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 
     li {
       margin: 0 7px;
@@ -229,6 +257,10 @@
     right: 0;
     z-index: 1;
 
+    @media (max-width: 1499px) {
+      top: 19px;
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -242,6 +274,11 @@
       line-height: 150px;
       color: #EA0074;
       font-family: $MVS;
+
+      @media (max-width: 1499px) {
+        font-size: 80px;
+        line-height: 80px;
+      }
     }
 
     span {
@@ -255,10 +292,19 @@
       position: relative;
       top: -78px;
       left: 132px;
+
+      @media (max-width: 1499px) {
+        font-size: 30px;
+        line-height: 37px;
+        left: 75px;
+        top: -42px;
+      }
     }
   }
 
   &__pdf {
+    display: none;
+
     &_item {
       font-weight: 600;
       line-height: 17px;
