@@ -281,31 +281,8 @@ main.wrap-overflow
         .main-examples__card
           span
           img(src='img/content/main/after.png', alt='')
-  section.main-contact
-    .container
-      .main-contact__title
-        span Contact Us
-        p More Information about a pattern for Your Business
-      form.form.main-contact__form(action='')
-        div
-          input(type='text', placeholder='Contact name')
-          // error span:
-          //span The field is required.
-        div
-          input.phone-mask(type='tel', placeholder='Contact phone')
-          // error span:
-          //span The field is required.
-        div
-          input(type='email', placeholder='Your email')
-          // error span:
-          //span The field is required.
-        button.btn(type='submit')
-          | send
-          i.i-btn
 
-        // Form error message:
-        //div.main-contact__error
-          span One a more fields have an error. Please check and try again
+  include ../contacts.pug
 
   section.main-brand
     .container

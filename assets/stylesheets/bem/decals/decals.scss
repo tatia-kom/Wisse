@@ -1,0 +1,52 @@
+.decals {
+  background: #1D1D1D;
+  position: relative;
+  padding-bottom: 121px;
+
+  @media (max-width: 1699px) {
+    padding-bottom: 67px;
+  }
+
+  &--b120 {
+    & + * {
+      padding-top: 150px;
+
+      @media (max-width: 1699px) {
+        padding-top: 85px;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc((100vw - 1180px) / 2 + 467px);
+    right: 0;
+    bottom: 0;
+    top: 205px;
+    background: black;
+
+    @media (max-width: 1699px) {
+      left: calc((100vw - 1180px) / 2 + 423px);
+      top: 170px;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    background: #FFFFFF;
+    opacity: 0.1;
+    top: 0;
+    bottom: 0;
+    left: calc((100vw - 1180px) / 2 + 403px);
+    z-index: 0;
+
+    @media (max-width: 1699px) {
+      left: calc((100vw - 1180px) / 2 + 342px);
+    }
+  }
+}
