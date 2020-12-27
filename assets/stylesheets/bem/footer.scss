@@ -7,6 +7,10 @@
     padding-top: 50px;
   }
 
+  @media (max-width: $xs) {
+    padding-top: 30px;
+  }
+
   a {
     color: #FFFFFF;
   }
@@ -15,16 +19,44 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+    }
   }
 
   &__desc {
     width: 100%;
     max-width: 201px;
 
+    @media (max-width: $md) {
+      max-width: 150px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 100%;
+    }
+
+    &_logo {
+      max-width: 74px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
     &_text {
       padding-top: 25px;
       opacity: 0.34;
       transition: $t;
+
+      @media (max-width: $md) {
+        font-size: 12px;
+      }
+
+      @media (max-width: $xs) {
+        padding-top: 15px;
+      }
 
       &:hover {
         opacity: 1;
@@ -40,14 +72,40 @@
     max-width: 557px;
     padding-bottom: 65px;
 
+    @media (max-width: $md) {
+      max-width: 500px;
+    }
+
+    @media (max-width: $sm) {
+      padding-bottom: 32px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 100%;
+      padding: 30px 0;
+      flex-wrap: wrap;
+    }
+
     ul {
+      @media (max-width: $xs) {
+        width: calc(50% - 4px);
+      }
+
       li {
         display: flex;
         margin-bottom: 18px;
 
+        @media (max-width: $xs) {
+          margin-bottom: 12px;
+        }
+
         a {
           color: #666666;
           font-weight: 300;
+
+          @media (max-width: $xs) {
+            font-size: 12px;
+          }
 
           &:hover {
             color: white;
@@ -61,13 +119,37 @@
         &.bold {
           margin-bottom: 27px;
 
+          @media (max-width: $xs) {
+            margin-bottom: 16px;
+          }
+
           a {
             color: white;
             font-weight: 400;
+
+            @media (max-width: $xs) {
+              text-transform: uppercase;
+            }
           }
 
           &:nth-child(2n) {
             margin-top: 30px;
+          }
+        }
+      }
+
+      &:last-child {
+        @media (max-width: $xs) {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 100%;
+          margin-top: 18px;
+
+          li {
+            width: calc(50% - 0px);
+            padding: 0;
+            margin: 0 0 10px!important;
           }
         }
       }
@@ -78,9 +160,27 @@
     width: 100%;
     max-width: 251px;
 
+    @media (max-width: $md) {
+      max-width: 212px;
+    }
+
+    @media (max-width: $sm) {
+      max-width: 250px;
+      margin: 0 0 32px;
+    }
+
+    @media (max-width: $xs) {
+      margin: 0 0 40px;
+    }
+
     &_title {
       max-width: 212px;
       padding-bottom: 16px;
+
+      @media (max-width: $xs) {
+        max-width: 100%;
+        padding-bottom: 12px;
+      }
     }
 
     &_form {
@@ -98,6 +198,10 @@
 
         &::placeholder {
           color: #1393F4;
+        }
+
+        @media (max-width: $md) {
+          width: 100%;
         }
       }
 
@@ -160,5 +264,15 @@
     padding-top: 39px;
     padding-bottom: 50px;
     width: 100%;
+
+    @media (max-width: $sm) {
+      padding: 24px 0;
+    }
+
+    @media (max-width: $xs) {
+      padding: 11px 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }

@@ -2,6 +2,19 @@
   height: 606px;
   border: none !important;
 
+  @media (max-width: $md) {
+    height: 500px;
+  }
+
+  @media (max-width: $sm) {
+    height: 400px;
+  }
+
+  @media (max-width: $xs) {
+    margin-top: 30px;
+    height: 208px;
+  }
+
   img {
     height: 100%;
   }
@@ -16,6 +29,12 @@
       height: 70.37px;
       border: none;
       margin-left: -35px;
+
+      @media (max-width: $xs) {
+        width: 34px;
+        height: 34px;
+        margin-left: -17px;
+      }
     }
   }
 }

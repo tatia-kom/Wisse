@@ -12,6 +12,14 @@ body {
   @media (max-width: 1499px) {
     padding-top: 133px;
   }
+
+  @media (max-width: 991px) {
+    padding-top: 162px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 125px;
+  }
 }
 
 *,
@@ -84,3 +92,8 @@ sans-serif;
 // colors
 $blue: #1393F4;
 $rose: #EA0074;
+
+// media
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;

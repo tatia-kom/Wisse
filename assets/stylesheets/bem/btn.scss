@@ -15,8 +15,17 @@
   transition: $t;
   border: 2px solid transparent;
 
+  @media (max-width: $xs) {
+    font-size: 12px;
+  }
+
   i {
     margin-left: 14px;
+
+    @media (max-width: $xs) {
+      font-size: 16px;
+      margin-left: 10px;
+    }
   }
 
   &:hover {
@@ -33,4 +42,10 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  @media (max-width: $xs) {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
 }

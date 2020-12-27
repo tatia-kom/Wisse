@@ -1,6 +1,18 @@
 .container {
   max-width: 1180px;
   margin: 0 auto;
+
+  @media (max-width: $md) {
+    max-width: 932px!important;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 708px!important;
+  }
+
+  @media (max-width: $xs) {
+    max-width: calc(100% - 20px)!important;
+  }
 }
 
 .wrap-overflow {
@@ -19,6 +31,20 @@
 
   @media (max-width: 1699px) {
     font-size: 130px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 100px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 70px;
+  }
+
+  @media (max-width: $xs) {
+    font-size: 44px;
+    line-height: 44px;
+    white-space: normal;
   }
 
   &--black {
@@ -49,6 +75,23 @@
       bottom: 8px;
       left: 100px;
     }
+
+    @media (max-width: $md) {
+      bottom: 20px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 30px;
+      bottom: 25px;
+      left: 50px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+      line-height: 18px;
+      left: 30px;
+      bottom: 9px;
+    }
   }
 }
 
@@ -65,6 +108,20 @@
 
   @media (max-width: 1699px) {
     font-size: 130px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 100px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 70px;
+  }
+
+  @media (max-width: $xs) {
+    font-size: 44px;
+    line-height: 44px;
+    white-space: normal;
   }
 
   span {
@@ -89,6 +146,24 @@
       bottom: 8px;
       left: 100px;
     }
+
+    @media (max-width: $md) {
+      bottom: 20px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 30px;
+      bottom: 25px;
+      left: 50px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+      line-height: 18px;
+      left: 30px;
+      bottom: auto;
+      top: calc(100% - 15px);
+    }
   }
 }
 
@@ -105,6 +180,14 @@
     padding: 0 26px;
   }
 
+  @media (max-width: $md) {
+    padding: 0;
+  }
+
+  @media (max-width: $xs) {
+    flex-direction: column-reverse;
+  }
+
   &--reverse {
     flex-direction: row-reverse;
     width: calc(100% + 203px);
@@ -115,8 +198,17 @@
       margin-left: 0;
     }
 
+    @media (max-width: $xs) {
+      flex-direction: column-reverse;
+    }
+
     .side-block__content {
       margin-left: 0;
+
+      @media (max-width: $md) {
+        margin-right: 0;
+        margin-left: 32px;
+      }
     }
   }
 
@@ -126,6 +218,10 @@
     @media (max-width: 1699px) {
       margin-top: 32px;
     }
+
+    @media (max-width: $xs) {
+      margin-top: 40px;
+    }
   }
 
   &--t100 {
@@ -134,17 +230,37 @@
     @media (max-width: 1699px) {
       margin-top: 80px;
     }
+
+    @media (max-width: $xs) {
+      margin-top: 40px;
+    }
   }
 
   &__content {
     margin: 0 10px;
     flex-shrink: 0;
 
+    @media (max-width: $md) {
+      margin-right: 32px;
+    }
+
+    @media (max-width: $xs) {
+      margin: 20px 0 0!important;
+    }
+
     &--w457 {
       width: 457px;
 
       @media (max-width: 1699px) {
         width: 359px;
+      }
+
+      @media (max-width: $sm) {
+        width: 300px;
+      }
+
+      @media (max-width: $xs) {
+        width: 100%;
       }
     }
 
@@ -153,6 +269,14 @@
 
       @media (max-width: 1699px) {
         width: 348px;
+      }
+
+      @media (max-width: $sm) {
+        width: 300px;
+      }
+
+      @media (max-width: $xs) {
+        width: 100%;
       }
     }
   }
@@ -169,6 +293,11 @@
       font-size: 38px;
       line-height: 46px;
     }
+
+    @media (max-width: $xs) {
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 
   &__text {
@@ -178,8 +307,18 @@
     color: white;
     opacity: 0.6;
 
+    @media (max-width: $xs) {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 124%;
+    }
+
     p {
       margin-top: 26px;
+
+      @media (max-width: $xs) {
+        margin-top: 15px;
+      }
 
       &:first-child {
         margin-top: 0;
@@ -195,6 +334,11 @@
     @media (max-width: 1699px) {
       max-width: 650px;
       height: 450px;
+    }
+
+    @media (max-width: $xs) {
+      height: 208px;
+      max-width: 100%;
     }
 
     img {
@@ -227,6 +371,11 @@
       font-size: 38px;
       line-height: 46px;
     }
+
+    @media (max-width: $xs) {
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 
   &__text {
@@ -236,8 +385,18 @@
     color: white;
     opacity: 0.6;
 
+    @media (max-width: $xs) {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 124%;
+    }
+
     p {
       margin-top: 26px;
+
+      @media (max-width: $xs) {
+        margin-top: 15px;
+      }
 
       &:first-child {
         margin-top: 0;

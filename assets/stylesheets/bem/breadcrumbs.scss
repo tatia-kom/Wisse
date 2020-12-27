@@ -9,6 +9,11 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+
+    @media (max-width: $xs) {
+      padding: 0;
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
@@ -21,6 +26,11 @@
     align-items: center;
     margin-left: 24px;
     position: relative;
+
+    @media (max-width: $xs) {
+      font-size: 10px;
+      flex-shrink: 0;
+    }
 
     &:hover {
       color: rgba(238,239,240,1);

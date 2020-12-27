@@ -7,12 +7,24 @@
     padding-bottom: 67px;
   }
 
+  @media (max-width: $xs) {
+    padding-bottom: 40px;
+
+    & ~ .main-examples {
+      background: black;
+    }
+  }
+
   &--b120 {
     & + * {
       padding-top: 150px;
 
       @media (max-width: 1699px) {
         padding-top: 85px;
+      }
+
+      @media (max-width: $xs) {
+        padding-top: 20px;
       }
     }
   }
@@ -30,6 +42,16 @@
     @media (max-width: 1699px) {
       left: calc((100vw - 1180px) / 2 + 423px);
       top: 170px;
+    }
+
+    @media (max-width: $md) {
+      top: 160px;
+      left: calc((100vw - 932px) / 2 + 423px);
+    }
+
+    @media (max-width: $xs) {
+      left: auto;
+      width: calc(50% + 54px);
     }
   }
 
